@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+	<!-- Exclude path from decoration. -->
+	<mapping path="/**/ajax*" exclude="true" />
+	<mapping path="/user/login" exclude="true" />
+	<mapping path="/user/maintain" exclude="true" />
+	<mapping path="/user/lookPwdByPhone*" exclude="true" />
+	<mapping path="/user/xiazhu/*" exclude="true" />
+	<mapping path="/user/matchInfo/*" exclude="true" />
+	<mapping path="/user/page*" exclude="true" />
+	<mapping path="/admin/login" exclude="true" />
+	<mapping path="/**" decorator="/WEB-INF/sitemesh/bootstrap_page.jsp" exclude="false" />
+	<mapping path="/admin/*" decorator="/WEB-INF/sitemesh/admin_page.jsp" exclude="false" />
+	<mapping path="/user/*_m" decorator="/WEB-INF/sitemesh/user_bet_page_m.jsp" exclude="false" />
+	<mapping path="/user/*_m/**" decorator="/WEB-INF/sitemesh/user_bet_page_m.jsp" exclude="false" />
+	<mapping path="/user/*" decorator="/WEB-INF/sitemesh/user_bet_page.jsp" exclude="false" />
+	<mapping path="/stomp" decorator="/WEB-INF/sitemesh/user_sub_page.jsp" exclude="false" />
+	<mapping path="/user/register" decorator="/WEB-INF/sitemesh/wx_page.jsp" exclude="false" />
+</sitemesh>

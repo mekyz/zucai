@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+.div_photo {
+	position: relative; border: solid 1px #dfdfdf; border-radius: 100%; width: 9rem; margin: 0 auto;
+}
+
+.photo {
+	position: relative; border-radius: 100%; border: solid 2px #fff;
+}
+
+.photo:before {
+	content: "\20"; display: block; padding-top: 100%;
+}
+
+.photo>img {
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 100%;
+}
+
+.up-photo {
+	position: absolute; right: -.2rem; bottom: 0; display: block; width: 30%; height: 30%; border: solid 2px #fff; border-radius: 100%;
+	background: url(../images/icon-camera.png) no-repeat center/60% #f49105;
+}
+
+.div_photo input {
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; z-index: 1;
+}
+
+.no-border {
+	border-radius: 0;
+}

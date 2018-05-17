@@ -1,0 +1,22 @@
+{
+  "family": "tianxiangbing",
+  "name": "mobile-select-area",
+  "description": "选择地区",
+  "version": "3.0.3",
+  "git": "https://github.com/tianxiangbing/mobile-select-area",
+  "main":"mobile-select-area.js",
+  "author": {
+    "name": "田想兵",
+    "email": "55342775@qq.com",
+    "url": "http://www.lovewebgames.com/jsmodule/mobile-select-area.html"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jquery":"~1.9.1",
+    "jq-dialog":"~2.1.1"
+  }
+}

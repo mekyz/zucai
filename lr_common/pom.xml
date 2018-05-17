@@ -1,0 +1,94 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.lrcall.common</groupId>
+	<artifactId>lr_common</artifactId>
+	<version>1.0.5</version>
+	<packaging>jar</packaging>
+	<name>lr_common</name>
+	<url>http://maven.apache.org</url>
+	<organization>
+		<name>LR</name>
+		<url>http://www.lrapps.cn</url>
+	</organization>
+	<developers>
+		<developer>
+			<id>libit</id>
+			<name>Liu Juncheng</name>
+			<email>libit0909@139.com</email>
+			<organization>LR</organization>
+			<organizationUrl>http://www.lrapps.cn</organizationUrl>
+		</developer>
+	</developers>
+	<description>lr公共组件</description>
+	<properties>
+		<!-- 设置控制台输出编码为UTF8 -->
+		<argLine>-Dfile.encoding=UTF-8</argLine>
+		<jdom.version>2.0.6</jdom.version>
+		<gson.version>2.8.0</gson.version>
+		<log4j.version>1.2.17</log4j.version>
+		<httpclient.version>4.5.3</httpclient.version>
+		<pinyin4j.version>2.5.1</pinyin4j.version>
+		<!-- 测试依赖版本 -->
+		<junit.version>4.12</junit.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.8</jdk.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom2</artifactId>
+			<version>${jdom.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient-cache</artifactId>
+			<version>${httpclient.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.belerweb</groupId>
+			<artifactId>pinyin4j</artifactId>
+			<version>${pinyin4j.version}</version>
+		</dependency>
+	</dependencies>
+	<!-- 插件配置 -->
+	<build>
+		<plugins>
+			<!-- compiler插件, 设定JDK版本 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+				<!-- 打包插件，跳过单元测试 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

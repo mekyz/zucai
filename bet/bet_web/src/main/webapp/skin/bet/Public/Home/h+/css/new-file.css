@@ -1,0 +1,73 @@
+body{background: url(../images/bj.jpg) no-repeat;background-size: cover;}
+.sidebar {
+    background: transparent !important;
+    color: #ffffff;
+    border-right: 1px solid #2f81ca;
+}
+.sidebar .sidebar-footer {
+    color: #FFFFFF;
+    background: transparent !important;
+    border-right: 1px solid #2f81ca;
+}
+.sidebar .sidebar-footer *{color: #FFFFFF !important;}
+.sidebar ul.nav.nav-sidebar li span{color: #FFFFFF;}
+.sidebar ul.nav.nav-sidebar li.nav-parent > a:after {
+    color: #ffffff;
+}
+.sidebar ul.nav.nav-sidebar li .nav-children {
+    background: #f7f7f7;
+}
+.sidebar ul.nav.nav-sidebar li.opened > a {
+    background: url(../images/nav-bj.jpg) !important;
+}
+.sidebar ul.nav.nav-sidebar li.active,.sidebar ul.nav.nav-sidebar li.active a{
+	box-shadow: none;
+}
+.sidebar ul.nav.nav-sidebar li {
+    border-top: none;
+}
+.sidebar ul.nav.nav-sidebar li a{
+	border: none;
+	position: relative;
+}
+.sidebar ul.nav.nav-sidebar li a img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	transform: rotate(180deg);
+}
+.sidebar ul.nav.nav-sidebar li .nav-children{background: none;}
+.sidebar ul.nav.nav-sidebar li ul li {
+    margin: 0;
+    border-top: none !important;
+}
+.sidebar ul.nav.nav-sidebar li a:hover{
+	background:url(../images/nav-bj.jpg) !important;
+	box-shadow: none;
+}
+.navbar{
+	background: url(../images/top-bj.jpg) top left no-repeat !important;
+	background-size: cover !important;
+
+	/*padding: 0 10px 0 0px;
+	margin-left: 240px;*/
+}
+.page-header{box-shadow: none;border-bottom: none;}
+.panel .panel-heading.bk-bg-white {
+    background-color: #dae3db !important;
+    background-image: none !important;
+}
+@media only screen and (max-width: 767px) {
+	background: url(../images/top-bj.jpg) top left no-repeat !important;
+	background-size: 100% 100% important;
+}
+.panel .panel-heading.bk-bg-white {
+	/* background:url(../images/nav-bj.jpg) repeat-y !important; */
+	background: rgba(0,0,0,0.4) !important;
+	background-size:100% 100% !important;
+}
+
+.panel .panel-heading h6{
+	color:#ffffff;
+}

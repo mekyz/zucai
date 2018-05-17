@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="jdbc.batch_size">16</property>
+		<!-- 显示sql语句 -->
+		<property name="show_sql">false</property>
+		<property name="connection.useUnicode">true</property>
+		<property name="connection.characterEncoding">UTF-8</property>
+		<!-- 缓存设置 -->
+		<property name="cache.use_query_cache">true</property>
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</property>
+		<!-- <property name="hibernate.cache.region_prefix"></property> -->
+		<!-- <property name="cache.use_structured_entries">true</property> <property name="net.sf.ehcache.configurationResourceName">ehcache.xml</property> -->
+	</session-factory>
+</hibernate-configuration>

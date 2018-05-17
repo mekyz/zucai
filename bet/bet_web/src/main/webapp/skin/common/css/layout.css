@@ -1,0 +1,159 @@
+/*-----------------初始化---------------------*/
+* {
+	padding: 0; margin: 0; border: none; font-family: "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+em, i {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none; color: #333;
+}
+
+img {
+	border: 0 none; display: inherit;
+}
+
+html {
+	font-size: 62.5%; width: 100%; height: 100%;
+}
+
+body {
+	position: relative; min-width: 320px; width: 100%; height: 100%; color: #333; font-size: 1.4rem; line-height: 2rem; max-width: 640px; margin: 0 auto; background: #f2f2f2;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); word-break: break-all;
+}
+
+.clear:after {
+	content: '\20'; display: block; height: 0; clear: both; visibility: hidden;
+}
+
+input, select, textarea {
+	margin: 0; width: 100%; border-radius: 0; border: none; box-shadow: none; color: #333; font-size: 1.4rem; -webkit-appearance: none;
+}
+
+.Btn {
+	background: #ffae00; border-radius: 3px; color: #fff; display: block; height: 4rem; line-height: 4rem; text-align: center; font-size: 1.6rem;
+}
+
+.Btn:active {
+	opacity: 0.8;
+}
+
+.orange-bg {
+	background: #ff8400;
+}
+
+.Btnoff {
+	background: #fa9066;
+}
+
+.mt20 {
+	margin-top: 2rem;
+}
+
+.mt10 {
+	margin-top: 1rem;
+}
+
+.mt5 {
+	margin-top: .5rem;
+}
+
+.ml10 {
+	margin-left: 1rem;
+}
+
+.ml5 {
+	margin-left: .5rem;
+}
+
+.grey {
+	color: #666;
+}
+
+.greys {
+	color: #999;
+}
+
+.orange {
+	color: #ea5413;
+}
+
+.yellow {
+	color: #ff9f00;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: #00b600;
+}
+
+.blue {
+	color: #45b6c7;
+}
+
+/*-----------------alert---------------------*/
+#popup_container {
+	min-width: 220px; background: #fff; max-width: 260px; color: #000; border-radius: 5px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+#popup_title {
+	border: #fff 1px solid; border-bottom: #ddd 1px solid; font-weight: normal; font-size: 16px; background: #f4f4f4; cursor: default; color: #666; line-height: 2em; margin: 0; border-radius: 5px;
+	text-align: center;
+}
+
+#popup_content {
+	padding: 20px;
+}
+
+#popup_message {
+	text-align: center; padding: 0 0 1em 0;
+}
+
+#popup_panel {
+	text-align: center;
+}
+
+#popup_prompt {
+	margin: 1em 0 0 0; border: solid 1px #ddd; line-height: 20px; padding: 4px; border-radius: 3px;
+}
+
+#popup_ok {
+	background: #fa6828; border: solid 1px #fa6828; color: #fff; border-radius: 3px; height: 2em; line-height: 2em; padding: 0 2em; display: inline-block; font-size: 16px; cursor: pointer;
+}
+
+#popup_ok:hover {
+	opacity: 0.8;
+}
+
+#popup_cancel {
+	background: #fff; border: solid 1px #ddd; color: #999; border-radius: 3px; height: 2em; line-height: 2em; padding: 0 2em; display: inline-block; cursor: pointer; font-size: 16px; margin-left: 10px;
+}
+
+#popup_cancel:hover {
+	background: #f4f4f4; border: solid 1px #ddd;
+}
+
+#loadingdiv {
+	width: 100px; border-radius: 10px; position: fixed; top: 50%; left: 50%; margin-left: -50px; margin-top: -80px; background: rgba(0, 0, 0, 0.5);
+}
+
+#loadingimg {
+	background: url(../images/load.gif) no-repeat center bottom/50px auto; width: 100px; height: 70px;
+}
+
+#loadingdiv p {
+	color: rgba(255, 255, 255, 0.8); text-align: center; padding: 12px 8px;
+}
+
+.setshowdiv p {
+	padding: 10px; background: rgba(0, 0, 0, 0.7); color: #fff; border-radius: 5px; text-align: center;
+}

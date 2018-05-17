@@ -1,0 +1,167 @@
+﻿.main {
+	padding: 1.5rem;
+}
+
+.card {
+	background: #fff; display: block; width: 100%; border-radius: 5px; position: relative; left: 0; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none;
+	border: solid 1px #e7e7e7;
+}
+
+.cardinner {
+	position: relative; padding: 1.5rem;
+}
+
+.cardinner:before {
+	background: #f2f2f2; width: 12px; height: 12px; content: '\20'; display: block; border-radius: 100%; position: absolute; bottom: -6px; left: -7px; z-index: 1; border-right: solid 1px #e7e7e7;
+}
+
+.cardinner:after {
+	background: #f2f2f2; width: 12px; height: 12px; content: '\20'; display: block; border-radius: 100%; position: absolute; bottom: -6px; right: -7px; z-index: 1; border-left: solid 1px #e7e7e7;
+}
+
+.tit {
+	font-size: 1.6rem;
+}
+
+.number {
+	padding-left: 2.5rem; background: url(../images/money-icon.png) no-repeat left center/2rem; margin-top: 1rem;
+}
+
+.num-inp {
+	background: none; line-height: 2rem; height: 2rem;
+}
+
+input.num-inp::-webkit-outer-spin-button, input.num-inp::-webkit-inner-spin-button {
+	-webkit-appearance: none !important;
+}
+
+.balance {
+	display: block; border-top: dashed 1px #d5d5d5; padding: 6px 10px; position: relative; border-radius: 5px;
+}
+
+.box {
+	padding: 2rem 0;
+}
+
+.box h4 {
+	line-height: 3rem; font-weight: normal; font-size: 1.5rem;
+}
+
+.box p {
+	color: #666;
+}
+
+.orange-btn {
+	background: #ea5413; margin-top: 2rem;
+}
+
+.yellow {
+	color: #f49105;
+}
+
+.all-num {
+	display: block; float: right; color: #999;
+}
+
+footer {
+	height: 4rem;
+}
+
+.foot {
+	position: fixed; bottom: 0; left: 0; width: 100%; background: #f2f2f2; padding: 1rem 0; border-top: solid 1px #ddd; font-size: 1.2rem; text-align: center;
+}
+
+.hairlines .foot {
+	border-top: solid .5px #ddd;
+}
+
+.win-Terms {
+	display: none; position: fixed; top: 50px; left: 0; bottom: 0; right: 0; background: #fff; z-index: 999;
+}
+
+.Terms-tit {
+	text-align: center; padding: 1rem; font-size: 1.8rem;
+}
+
+.Termsbtndiv {
+	position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; padding: 1rem 0; border-top: solid 1px #ddd; font-size: 1.2rem; text-align: center;
+}
+
+.hairlines .Termsbtndiv {
+	border-top: solid .5px #ddd;
+}
+
+.Termsbtndiv>div {
+	padding: 0 1.5rem;
+}
+
+.Terms-main {
+	padding: 0 1.5rem; word-break: break-all;
+}
+
+.Terms-main p {
+	margin: .5rem 0; text-indent: 2em;
+}
+
+.Terms-main h4 {
+	margin: .5rem 0;
+}
+
+#wrapper {
+	position: absolute; z-index: 1; top: 4rem; bottom: 6rem; left: 0; width: 100%; overflow: hidden;
+}
+
+#scroller {
+	position: absolute; z-index: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0);
+	-o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+	-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none;
+}
+
+.iScrollIndicator {
+	position: absolute; width: 100%; background: linear-gradient(to bottom, #ea5413 0%, #ff8400 100%); background: -webkit-linear-gradient(top, #ea5413 0%, #ff8400 100%); border-radius: 2px;
+}
+
+.iScrollVerticalScrollbar {
+	position: absolute; z-index: 9999; width: 4px; bottom: 0; top: 0; right: 1px; border-radius: 2px; overflow: hidden; height: 100%; background: rgba(0, 0, 0, 0.1);
+}
+
+.win-bg {
+	position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9;
+}
+
+.win {
+	position: fixed; min-width: 250px; width: 70%; top: 50%; left: 50%; background: #fff; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-radius: 5px;
+	text-align: center;
+}
+
+.wintit {
+	font-size: 1.6rem; font-weight: normal; border-bottom: solid 1px #dfdfdf; padding: 1rem;
+}
+
+.wintxt {
+	padding: 1rem;
+}
+
+.win-bg {
+	display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .5); z-index: 99;
+}
+
+.win-password {
+	background: #fff; width: 301px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); border-radius: 5px;
+}
+
+.win-password-content {
+	padding: 15px;
+}
+
+.win-password-tit {
+	font-size: 1.6rem; text-align: center;
+}
+
+.win-password-btndiv .SubBtn {
+	float: left; width: 47%; border: solid 1px #ccc; display: inline-block; border-radius: 3px; color: #666; height: 4rem; line-height: 4rem; text-align: center; font-size: 1.6rem;
+}
+
+.win-password-btndiv .Btn {
+	float: right; width: 47%; border: solid 1px #f49105; background: #f49105; display: inline-block;
+}

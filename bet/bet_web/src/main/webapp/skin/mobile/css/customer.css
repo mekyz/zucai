@@ -1,0 +1,337 @@
+* {
+	padding: 0; margin: 0; border: none; font-family: "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+em, i {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none; color: #333;
+}
+
+img {
+	border: 0 none; /* display: inherit; */
+}
+
+html {
+	font-size: 62.5%; width: 100%; height: 100%;
+}
+
+body {
+	position: relative; min-width: 320px; width: 100%; height: 100%; color: #333; font-size: 1.4rem; line-height: 2rem; max-width: 640px; margin: 0 auto; background: #f2f2f2;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); word-break: break-all;
+}
+
+.clear:after {
+	content: '\20'; display: block; height: 0; clear: both; visibility: hidden;
+}
+
+input, select, textarea {
+	margin: 0; width: 100%; border-radius: 0; border: none; box-shadow: none; color: #333; font-size: 1.4rem; -webkit-appearance: none;
+}
+
+.mt20 {
+	margin-top: 2rem;
+}
+
+.mt10 {
+	margin-top: 1rem;
+}
+
+.mt5 {
+	margin-top: .5rem;
+}
+
+.ml10 {
+	margin-left: 1rem;
+}
+
+.ml5 {
+	margin-left: .5rem;
+}
+
+.mb10 {
+	margin-bottom: 1rem;
+}
+
+.mb5 {
+	margin-bottom: .5rem;
+}
+
+.grey {
+	color: #666;
+}
+
+.greys {
+	color: #999;
+}
+
+.orange {
+	color: #ea5413;
+}
+
+.yellow {
+	color: #ff9f00;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: #00b600;
+}
+
+.blue {
+	color: #45b6c7;
+}
+/*-----------------alert---------------------*/
+#popup_container {
+	min-width: 220px; background: #fff; max-width: 260px; color: #000; border-radius: 5px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+#popup_title {
+	border: #fff 1px solid; border-bottom: #ddd 1px solid; font-weight: normal; font-size: 16px; background: #f4f4f4; cursor: default; color: #666; line-height: 2em; margin: 0; border-radius: 5px;
+	text-align: center;
+}
+
+#popup_content {
+	padding: 20px;
+}
+
+#popup_message {
+	text-align: center; padding: 0 0 1em 0;
+}
+
+#popup_panel {
+	text-align: center;
+}
+
+#popup_prompt {
+	margin: 1em 0 0 0; border: solid 1px #ddd; line-height: 20px; padding: 4px; border-radius: 3px;
+}
+
+#popup_ok {
+	background: #fa6828; border: solid 1px #fa6828; color: #fff; border-radius: 3px; height: 2em; line-height: 2em; padding: 0 2em; display: inline-block; font-size: 16px; cursor: pointer;
+}
+
+#popup_ok:hover {
+	opacity: 0.8;
+}
+
+#popup_cancel {
+	background: #fff; border: solid 1px #ddd; color: #999; border-radius: 3px; height: 2em; line-height: 2em; padding: 0 2em; display: inline-block; cursor: pointer; font-size: 16px; margin-left: 10px;
+}
+
+#popup_cancel:hover {
+	background: #f4f4f4; border: solid 1px #ddd;
+}
+
+#loadingdiv {
+	width: 100px; border-radius: 10px; position: fixed; top: 50%; left: 50%; margin-left: -50px; margin-top: -80px; background: rgba(0, 0, 0, 0.5);
+}
+
+#loadingimg {
+	background: url(../images/load.gif) no-repeat center bottom/50px auto; width: 100px; height: 70px;
+}
+
+#loadingdiv p {
+	color: rgba(255, 255, 255, 0.8); text-align: center; padding: 12px 8px;
+}
+
+.setshowdiv p {
+	padding: 10px; background: rgba(0, 0, 0, 0.7); color: #fff; border-radius: 5px; text-align: center;
+}
+/*-----------------alert end------------------*/
+header {
+	padding: 0 1.5rem; background: #fff; position: relative;
+}
+
+header:before {
+	content: "\20"; position: absolute; display: block; left: 0; bottom: -1px; height: 1px; width: 100%; background: rgba(0, 0, 0, .15); -webkit-transform-origin: 50% 0; transform-origin: 50% 0;
+	-webkit-transform: scaleY(.5); transform: scaleY(.5);
+}
+
+.userinfodiv {
+	padding: 1.5rem 0;
+}
+
+.user-pic {
+	float: left; height: 7rem; width: 7rem; border-radius: 100%; margin-right: 1rem;
+}
+
+.user-pic img {
+	height: 100%; width: 100%; border-radius: 100%;
+}
+
+.user-information {
+	overflow: hidden;
+}
+
+.user-information dd {
+	font-size: 1.8rem;
+}
+
+.photodiv {
+	position: relative; border: solid 1px #dfdfdf; border-radius: 100%; width: 9rem; margin: 0 auto;
+}
+
+.photo {
+	position: relative; border-radius: 100%; border: solid 2px #fff;
+}
+
+.photo:before {
+	content: "\20"; display: block; padding-top: 100%;
+}
+
+.photo>img {
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 100%;
+}
+
+.up-photo {
+	position: absolute; right: -.2rem; bottom: 0; display: block; width: 30%; height: 30%; border: solid 2px #fff; border-radius: 100%;
+	background: url(../images/icon-camera.png) no-repeat center/60% #f49105;
+}
+
+.photodiv input {
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; z-index: 1;
+}
+
+.tips {
+	padding: 1rem 1.5rem;
+}
+
+.mlr0 {
+	margin-left: 0; margin-right: 0;
+}
+
+.btn-row {
+	margin: 0 0 10px 0;
+}
+
+.btn-white {
+	background: #ff8400; color: #fff;
+}
+
+.btn-green {
+	background: #33cc99; color: #fff;
+}
+/* 修正顶部导航栏
+-------------------------------------------------- */
+.head_root {
+	position: fixed; top: 0; width: 100%; height: 50px; line-height: 50px; background-color: #1aad19; color: #FFF; text-align: center; z-index: 2000; min-width: 320px; max-width: 640px;
+}
+
+.head_root .div_back {
+	float: left; width: 15%; height: 50px; margin: 0; padding: 0; text-align: left;
+}
+
+.head_root .div_title {
+	float: left; width: 70%; height: 50px; text-align: center; font-size: 20px; font-weight: 500; word-break: keep-all; /* 不换行 */ white-space: nowrap; /* 不换行 */ overflow: hidden; text-overflow: ellipsis;
+	white-space: nowrap; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.head_root .div_menu {
+	float: right; width: 15%; height: 50px; margin: 0; padding: 0; text-align: right;
+}
+
+.head_root .div_back>a>img {
+	width: 50px; height: 50px;
+}
+
+.head_root .div_menu>.btn-group>img {
+	width: 50px; height: 50px; margin: 0; padding: 0; vertical-align: top;
+}
+
+.head_root .div_menu>.btn-group>.dropdown-menu {
+	left: inherit; right: 0; margin: 0;
+}
+
+/* 修正底部导航栏
+-------------------------------------------------- */
+.bottom_nav_root {
+	padding: 0;
+}
+
+.bottom_nav_root .row {
+	margin-left: 0; margin-right: 0;
+}
+
+.bottom_nav_root>.row>div {
+	margin: 0; padding: 3px 0 2px 0;
+}
+
+.bottom_nav_root>.row>div>img {
+	width: 32px; height: 32px;
+}
+
+.bottom_nav_root>.row>div>div {
+	font-size: 0.8em; margin: 2px 0 0 0;
+}
+/* 更多功能设置
+-------------------------------------------------- */
+.func_root {
+	height: 64px; color: #000000; padding-left: 5px; padding-right: 5px; background: url(../images/arrow_right.png) right no-repeat;
+}
+
+.func_separator {
+	height: 0.6px; background: #FFFFFF;
+}
+
+.func_separator2 {
+	height: 0; margin-top: 20px;
+}
+
+.func_root .img_left {
+	height: 32px;
+}
+
+.func_root .img_left_big {
+	height: 40px;
+}
+
+.func_root .img_right {
+	height: 24px;
+}
+
+.func_root .func_name {
+	overflow: hidden; font-size: 1.2em; font-weight: 600;
+}
+
+.func_root .func_content {
+	overflow: hidden; font-size: 1.0em; font-weight: 400; padding-left: 0; padding-right: 0;
+}
+
+.func_root .div_right {
+	padding-left: 0; padding-right: 0;
+}
+/* button居中显示
+-------------------------------------------------- */
+.button_center {
+	width: 100%; display: block; margin-left: auto; margin-right: auto;
+}
+
+.show_1_line_text {
+	word-break: break-all; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.show_2_line_text {
+	word-break: break-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.show_3_line_text {
+	word-break: break-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.show_4_line_text {
+	word-break: break-all; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+a:focus, a:hover {
+	text-decoration: none;
+}

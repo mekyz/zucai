@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.lrapps.bet</groupId>
+	<artifactId>bet</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>bet</name>
+	<url>http://maven.apache.org</url>
+	<modules>
+		<module>bet_mvc</module>
+		<module>bet_web</module>
+	</modules>
+	<properties>
+		<!-- 设置控制台输出编码为UTF8 -->
+		<argLine>-Dfile.encoding=UTF-8</argLine>  
+		<!-- 主要依赖库的版本定义 -->
+		<bet.version>1.0.0</bet.version>
+		<lr_common.version>1.0.5</lr_common.version>
+		<aopalliance.version>1.0</aopalliance.version>
+		<spring.version>4.3.10.RELEASE</spring.version>
+		<hibernate.version>4.3.11.Final</hibernate.version>
+		<!-- <c3p0.version>0.9.5.2</c3p0.version> -->
+		<mysql.version>5.1.37</mysql.version>
+		<quartz.version>2.2.3</quartz.version>
+		<slf4j.version>1.7.7</slf4j.version>
+		<jackson.version>2.4.5</jackson.version>
+		<sitemesh.version>3.0.1</sitemesh.version>
+		<gson.version>2.8.0</gson.version>
+		<jackson-2-version>2.8.6</jackson-2-version>
+		<jdom.version>2.0.6</jdom.version>
+		<httpclient.version>4.5.3</httpclient.version>
+		<log4j.version>1.2.17</log4j.version>
+		<pinyin4j.version>2.5.1</pinyin4j.version>
+		<commons-codec.version>1.9</commons-codec.version>
+		<zxing.version>3.3.0</zxing.version>
+		<poi.version>3.16</poi.version>
+		<mns.version>1.1.8</mns.version>
+		<org.slf4j.version>1.7.25</org.slf4j.version>
+		<commons-io.varsion>2.5</commons-io.varsion>
+		<commons-lang3.version>3.5</commons-lang3.version>
+		<commons-fileupload.version>1.3.2</commons-fileupload.version>
+		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+		<jsp-api.version>2.2</jsp-api.version>
+		<jstl.version>1.2</jstl.version>
+		<!-- 测试依赖版本 -->
+		<junit.version>4.12</junit.version>
+		<hamcrest.core.version>1.3</hamcrest.core.version>
+		<mockito.core.version>2.7.22</mockito.core.version>
+		<!-- Plugin的属性定义 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.8</jdk.version>
+		<maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
+		<maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
+		<jetty-maven-plugin.version>9.4.7.v20170914</jetty-maven-plugin.version>
+		<deploy_env>local</deploy_env>
+	</properties>
+	<!-- 设定除中央仓库(repo1.maven.org/maven2/)外的其他仓库,按设定顺序进行查找. -->
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>http://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.aliyun.mns</groupId>
+				<artifactId>aliyun-sdk-mns</artifactId>
+				<version>${mns.version}</version>
+				<classifier>jar-with-dependencies</classifier>
+			</dependency>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>${commons-codec.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${gson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jdom</groupId>
+				<artifactId>jdom2</artifactId>
+				<version>${jdom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient-cache</artifactId>
+				<version>${httpclient.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${org.slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.belerweb</groupId>
+				<artifactId>pinyin4j</artifactId>
+				<version>${pinyin4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.quartz-scheduler</groupId>
+				<artifactId>quartz</artifactId>
+				<version>${quartz.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>c3p0</groupId>
+						<artifactId>c3p0</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+		<!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz-jobs -->
+			<dependency>
+				<groupId>org.quartz-scheduler</groupId>
+				<artifactId>quartz-jobs</artifactId>
+				<version>${quartz.version}</version>
+			</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>${commons-io.varsion}</version>
+			</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
+			</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+			<dependency>
+				<groupId>commons-fileupload</groupId>
+				<artifactId>commons-fileupload</artifactId>
+				<version>${commons-fileupload.version}</version>
+			</dependency>
+		<!-- WEB begin -->
+		<!-- SPRING basic begin(一般不需要显式定义) -->
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-core</artifactId> 
+			<version>${spring.version}</version> <exclusions> <exclusion> <groupId>commons-logging</groupId> 
+			<artifactId>commons-logging</artifactId> </exclusion> </exclusions> </dependency> -->
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-beans</artifactId> 
+			<version>${spring.version}</version> </dependency> -->
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-context</artifactId> 
+			<version>${spring.version}</version> </dependency> -->
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-aop</artifactId> 
+			<version>${spring.version}</version> </dependency> -->
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-tx</artifactId> 
+			<version>${spring.version}</version> </dependency> -->
+		<!-- spring orm -->
+			<dependency>
+				<groupId>aopalliance</groupId>
+				<artifactId>aopalliance</artifactId>
+				<version>${aopalliance.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-orm</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+		<!-- SPRING basic end -->
+		<!-- spring mvc -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-websocket</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-aspects</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-instrument</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-instrument-tomcat</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jms</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-oxm</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+		<!-- j2ee web spec -->
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${javax.servlet-api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet.jsp</groupId>
+				<artifactId>jsp-api</artifactId>
+				<version>${jsp-api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jstl</artifactId>
+				<version>${jstl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.sitemesh</groupId>
+				<artifactId>sitemesh</artifactId>
+				<version>${sitemesh.version}</version>
+			</dependency>
+		<!-- WEB end -->
+		<!-- database driver -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+		<!-- database driver End -->
+		<!-- PERSISTENCE begin -->
+		<!-- hibernate -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-entitymanager</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-ehcache</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-envers</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-c3p0</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+		<!-- hibernate End -->			
+			<!-- google zxing 二维码 -->
+			<dependency>
+				<groupId>com.google.zxing</groupId>
+				<artifactId>core</artifactId>
+				<version>${zxing.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.zxing</groupId>
+				<artifactId>javase</artifactId>
+				<version>${zxing.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.poi/poi 导出Excel -->
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lrcall.common</groupId>
+				<artifactId>lr_common</artifactId>
+				<version>${lr_common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lrcall.common</groupId>
+				<artifactId>lr_web_common</artifactId>
+				<version>${lr_common.version}</version>
+			</dependency>
+			<!-- 测试依赖 -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.hamcrest</groupId>
+				<artifactId>hamcrest-core</artifactId>
+				<version>${hamcrest.core.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>${mockito.core.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<!-- 插件配置 -->
+	<build>
+		<pluginManagement>
+			<plugins>
+				<!-- compiler插件, 设定JDK版本 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler-plugin.version}</version>
+					<configuration>
+						<source>${jdk.version}</source>
+						<target>${jdk.version}</target>
+						<encoding>${project.build.sourceEncoding}</encoding>
+					</configuration>
+				</plugin>
+				<!-- 打包插件，跳过单元测试 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>${maven-surefire-plugin.version}</version>
+					<configuration>
+						<skipTests>true</skipTests>
+					</configuration>
+				</plugin>  
+				<!-- jetty web 容器测试 -->
+				<plugin>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-maven-plugin</artifactId>
+					<version>${jetty-maven-plugin.version}</version>
+					<configuration>
+						<scanIntervalSeconds>10</scanIntervalSeconds>
+						<webApp>
+							<contextPath>/bet</contextPath>
+						</webApp>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

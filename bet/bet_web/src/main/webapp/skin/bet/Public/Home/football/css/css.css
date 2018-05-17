@@ -1,0 +1,20 @@
+*{-webkit-box-sizing: border-box;box-sizing: border-box;}
+body,input,button,textarea{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;}
+html,body,div,ol,ul,li,dl,dt,dd,table,tr,th,td,h1,h2,h3,h4,h5,h6,p,em,b,i,a,span,img,mark,time,label,font,center,hr,fieldset,legend,iframe,pre{margin:0; padding:0; border:0; outline:none; list-style:none; font-weight:normal; font-style:normal; font-family:"Microsoft Yahei", Arial, "SimSun", sans-serif; }
+button,input,select,option{vertical-align:middle; outline:none;}
+button,input{font-size: 14px;}
+button,textarea{border: none;background: transparent;outline: none;}
+span,em,b,i,a,label,font,mark,time,code,pre{width:auto; height:auto; display:inline-block; vertical-align:bottom; background:transparent;font-style: normal;}
+img{border: none;display: block;}
+
+.logo{position: absolute;top: 8%;left: 50%;margin-left: -95px;width: 190px;}
+.login{width: 500px;height: auto;margin: 0 auto;margin-top: 350px;}
+.inp{width: 320px;height: 45px;margin: 0 auto;margin-top: 20px;border-radius: 25px;background: #FFFFFF;position: relative;}
+.inp img{position: absolute;top: 14px;left: 18px;}
+.inp input{height: 45px;width: 90%;padding-left: 45px;border-radius: 25px;border: none;}
+.login p{width: 320px;display: block;margin: 0 auto;padding-left: 17px;color: #FFFFFF;margin-top: 10px;font-size: 14px;}
+.login button{width: 188px;height: 45px;background: #66d354;margin: 0 auto;margin-top: 20px;border-radius: 20px;font-size: 18px;display: block;color: #FFFFFF;}
+.login ul{width: 100%;display: block;margin-top: 95px;}
+.login ul li{width: 50%;float: left;}
+.login ul li img{display: block;margin: 0 auto;cursor: pointer;}
+button:active, button:link{color: #fff;background-color: #449d44;border-color: #398439;}

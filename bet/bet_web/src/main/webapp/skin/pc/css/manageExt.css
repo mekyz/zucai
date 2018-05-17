@@ -1,0 +1,125 @@
+/* 单元格连续纯字母数字强制换行显示 */
+.wordwrap {
+	word-wrap: break-word; word-break: break-all; overflow: hidden;
+}
+/* 超长文字单元格省略号显示 */
+.ellipsis {
+	white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis;
+}
+
+.block {
+	border: 1px solid #ccc; background: white; margin: 10px 0 0 0; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+}
+
+/* form边距调整 */
+form {
+	margin: 5px 0 0 0;
+}
+
+/* fixed的表格才可以使单元格显示省略号*/
+.table {
+	table-layout: fixed;
+}
+
+.table th, td {
+	text-align: center; word-wrap: break-word; word-break: break-all;
+}
+
+/* 表格复选框单元格居中显示 */
+.table .td-checkbox {
+	text-align: center;
+}
+
+.table .td-checkbox input {
+	margin: 0;
+}
+
+#div-advanced-search .well {
+	margin-bottom: 10px;
+}
+
+.column_len1 {
+	text-align: center; width: 30px;
+}
+
+.column_len2 {
+	text-align: center; width: 60px;
+}
+
+.column_len3 {
+	text-align: center; width: 90px;
+}
+
+.column_len4 {
+	text-align: center; width: 120px;
+}
+
+.column_len5 {
+	text-align: center; width: 150px;
+}
+
+.column_len6 {
+	text-align: center; width: 180px;
+}
+
+.column_len7 {
+	text-align: center; width: 210px;
+}
+
+.column_len8 {
+	text-align: center; width: 240px;
+}
+
+.column_len9 {
+	text-align: center; width: 270px;
+}
+
+.column_len10 {
+	text-align: center; width: 300px;
+}
+
+.column_len11 {
+	text-align: center; width: 330px;
+}
+
+.column_len12 {
+	text-align: center; width: 360px;
+}
+
+#fuzzy-search {
+	height: 33.6px;
+}
+
+table {
+	background-color: #ffffff;
+}
+
+table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
+	vertical-align: middle;
+}
+
+.dataTables_paginate {
+	margin-top: 10px; margin-bottom: 10px;
+}
+
+.paginate_button {
+	/*margin-left: 10px; margin-right: 10px;*/
+	
+}
+
+.well {
+	border: none; margin-bottom: 0;
+}
+
+#div-fuzzy-search {
+	display: none;
+}
+
+@media ( min-width : 768px) {
+	.form-inline input[type="text"] {
+		width: 100px;
+	}
+	.form-inline .form-group {
+		margin-bottom: 10px;
+	}
+}

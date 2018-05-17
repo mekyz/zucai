@@ -1,0 +1,257 @@
+.pay_list{
+	height: auto;
+	overflow: hidden;
+	margin: 25px;
+}
+.pay_list h3{
+	color: #000000;
+	font-size: 20px;
+	font-weight: bolder;
+	margin-bottom: 25px;
+}
+.pay_list > ul li{
+	width: 250px;
+	height: 320px;
+	border: 6px solid #d8d8d8;
+	border-radius: 8px;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	margin: 0 25px 25px 0;
+}
+.pay_list > ul li:last-child{
+	margin-left: 0;
+}
+.pay_list > ul li.hover{
+	border-color: #a2d26f;
+}
+.pay_list > ul li h2{
+	font-size: 24px;
+	font-weight: bolder;
+	color: #d8d8d8;
+	text-align: center;
+	margin: 20px 0;
+}
+.pay_list > ul li > img{
+	display: block;
+	margin: 35px auto 20px auto;
+}
+.pay_list > ul li p{
+	color: #d8d8d8;
+	line-height: 24px;
+	margin: 0 12px 0 18px;
+}
+.pay-right{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+.pay_list > ul li.hover .pay-right{
+	display: block;
+}
+.pay-right span{
+	width: 0;
+	height: 0;
+	border-bottom: 70px solid #a2d26f;
+    border-left: 70px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.pay-right img{
+	width: 36px;
+    position: absolute;
+    bottom: 6px;
+    right: 0px;
+    z-index: 10;
+}
+.pay-txt1{
+	margin: 0 0 25px 30px;
+}
+.pay-txt1 a{
+	margin-right: 15px;
+}
+.bank{
+	width: 450px;
+	height: auto;
+	border: 1px solid #dedede;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.bank-change{
+	width: 450px;
+	height: 45px;
+	position: relative;
+	border-bottom: 1px solid #dedede;
+}
+.bank-change p > img{
+	height: 34px;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.bank-change p{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.bank-change span{
+	line-height: 45px;
+	margin-left: 15px;
+	color: #58b158;
+	font-weight: bold;
+	font-size: 18px;
+}
+.bank-change p:after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 10px solid #DCDCDC;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: 18px;
+	right: 15px;
+}
+.bank-change p.hover:after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: none;
+	border-bottom: 10px solid #DCDCDC;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: 18px;
+	right: 15px;
+}
+.bank-change ul{
+	width: 448px;
+	height: 150px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	top: 44px;
+	left: 0;
+	background: #FFFFFF;
+	display: none;
+	border: 1px solid #DCDCDC;
+	z-index: 1;
+}
+.bank-change ul li{
+	margin: 5px 0;
+	cursor: pointer;
+}
+.bank-change ul li img{
+	height: 34px;
+	margin-left: 15px;
+}
+.fr{
+	float: right;
+}
+.bank em,.bank i{
+	font-style: normal;
+}
+.bank-center p{
+	margin: 15px 20px;
+}
+.bank-center p span{
+	width: 80px;
+	text-align: right;
+	display: inline-block;
+}
+.bank-center p em{
+	cursor: pointer;
+	color: #2f81ca;
+}
+.bank-center p input{
+	background: #fcfcfc;
+	border-radius: 3px;
+	border: 1px solid #DCDCDC;
+	padding: 3px 5px;
+	width: 165px;
+}
+.bank-center p b{
+	font-weight: normal;
+	color: #bdbcbc !important;
+	position: relative;
+	left: 7px;
+}
+
+.prompt{
+	background: #f2dede;
+	color: #b94a48;
+	border: 1px solid #eed3d7;
+	border-radius: 6px;
+	padding: 15px 20px;
+}
+.prompt h2,.prompt p{
+	color: #b94a48;
+}
+.prompt h2{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.prompt p{
+	font-size: 16px;
+	margin-top: 10px;
+}
+.withdrawals{
+	margin: 30px 0;
+}
+.pay_list em,.pay_list i{
+	font-style: normal;
+} 
+.withdrawals-txt1{
+	font-size: 16px;
+}
+.withdrawals-txt1 span{
+	margin-right: 55px;
+	margin-left: 10px;
+}
+.withdrawals-txt1 span:last-child{
+	margin-right: 0;
+}
+.withdrawals-txt1 span em{
+	margin-left: 10px;
+	font-weight: bolder;
+}
+.withdrawals-from{
+	margin-left: 10px;
+	margin-top: 40px;
+}
+.withdrawals-from p{
+	margin-top: 20px;
+}
+.withdrawals-from p b{
+	position: relative;
+	right: -10px;
+}
+.withdrawals-from span{
+	width: 150px;
+	display: inline-block;
+	text-align: right;
+}
+.withdrawals-from input{
+	padding: 9px 5px;
+	border-radius: 3px;
+	border: 1px solid #DCDCDC;
+	width: 50%;
+}
+.withdrawals-from select {
+    padding: 9px 5px;
+    border-radius: 3px;
+    border: 1px solid #DCDCDC;
+    width: 250px !important;
+    float: none !important;
+    display: inline-block;
+}
+
+.withdrawals-from select#J_province ,.withdrawals-from select#J_city ,.withdrawals-from select#J_district {
+    width: 130px !important;
+}
+.withdrawals-from select#J_district {
+	display:block;
+	margin-left:155px;
+	margin-top:1px;
+}

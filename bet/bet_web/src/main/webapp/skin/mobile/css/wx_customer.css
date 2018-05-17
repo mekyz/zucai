@@ -1,0 +1,114 @@
+* {
+	padding: 0; margin: 0; border: none; font-family: "microsoft yahei", Arial, Helvetica, sans-serif;
+}
+
+html {
+	font-size: 62.5%; width: 100%; height: 100%;
+}
+
+body {
+	position: relative; min-width: 320px; width: 100%; height: 100%; color: #333; font-size: 1.4rem; line-height: 2rem; max-width: 640px; margin: 0 auto; background: #f2f2f2;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); word-break: break-all;
+}
+
+.head_root {
+	position: fixed; top: 0; width: 100%; min-width: 320px; max-width: 640px; height: 50px; line-height: 50px; margin: 0 auto; background-color: #1aad19; color: #FFF; text-align: center; z-index: 2000;
+}
+
+.head_root .div_back {
+	float: left; width: 15%; height: 50px; margin: 0; padding: 0; text-align: left;
+}
+
+.head_root .div_title {
+	float: left; width: 70%; height: 50px; text-align: center; font-size: 20px; font-weight: 500; word-break: keep-all; /* 不换行 */ white-space: nowrap; /* 不换行 */ overflow: hidden; text-overflow: ellipsis;
+	white-space: nowrap; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.head_root .div_menu {
+	float: right; width: 15%; height: 50px; margin: 0; padding: 0; text-align: right;
+}
+
+.head_root .div_back>a>img {
+	width: 50px; height: 50px;
+}
+
+.head_root .div_menu>a>img {
+	width: 50px; height: 50px;
+}
+
+.div_content {
+	padding-bottom: 10px;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.weui_label {
+	width: 6em;
+}
+
+.textarea_cells_title {
+	padding-left: 0; font-size: 17px; color: #000000; font-size: 17px;
+}
+
+.weui_btn_primary {
+	background-color: #ff8400;
+}
+
+.weui_textarea {
+	height: 80px;
+}
+
+.weui_select {
+	padding-left: 0;
+}
+
+.div_photo {
+	position: relative; border: solid 1px #dfdfdf; border-radius: 100%; width: 9rem; margin: 0 auto;
+}
+
+.photo {
+	position: relative; border-radius: 100%; border: solid 2px #fff;
+}
+
+.photo:before {
+	content: "\20"; display: block; padding-top: 100%;
+}
+
+.photo>img {
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 100%;
+}
+
+.up-photo {
+	position: absolute; right: -.2rem; bottom: 0; display: block; width: 30%; height: 30%; border: solid 2px #fff; border-radius: 100%;
+	background: url(../images/icon-camera.png) no-repeat center/60% #f49105;
+}
+
+.div_photo input {
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; z-index: 1;
+}
+
+.no-border {
+	border-radius: 0;
+}
+
+.tips {
+	padding: 10px 10px; font-size: 14px;
+}
+
+.grey {
+	color: #666;
+}
+
+.weui_cell_primary {
+	min-width: 100px;
+}

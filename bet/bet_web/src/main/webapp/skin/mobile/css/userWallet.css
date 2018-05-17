@@ -1,0 +1,90 @@
+.head {
+	padding: 0 1.5rem; background: #fff;
+}
+
+.info {
+	padding: 1.5rem 0;
+}
+
+.userlogodiv {
+	float: left; width: 7rem; height: 7rem; border-radius: 100%; overflow: hidden; margin-right: 1rem;
+}
+
+.userlogodiv img {
+	width: 100%; height: 100%;
+}
+
+.usermsg {
+	overflow: hidden;
+}
+
+.userInfo {
+	font-size: 2rem;
+}
+
+.partner {
+	background: #45b6c7; color: #fff; border-radius: 1rem; font-size: 1.2rem; padding: 0 .5rem; float: left;
+}
+
+.member {
+	background: #f49105; color: #fff; border-radius: 1rem; font-size: 1.2rem; padding: 0 .5rem; float: left;
+}
+
+.consumer {
+	background: #cecece; color: #fff; border-radius: 1rem; font-size: 1.2rem; padding: 0 .5rem; float: left;
+}
+
+.btn-performance {
+	float: right; padding-right: 1.5rem; padding-left: 2rem; position: relative; background: url(../images/icon-present.png) no-repeat left center/1.6rem;
+}
+
+.btn-performance:before {
+	right: .5rem; position: absolute; top: 50%; width: 8px; height: 8px; border-top: 1px solid rgba(0, 0, 0, .3); border-left: 1px solid rgba(0, 0, 0, .3); display: block; content: '\20';
+	transform: translateY(-50%) rotate(135deg); -webkit-transform: translateY(-50%) rotate(135deg);
+}
+
+.tit {
+	padding: 1rem 1.5rem;
+}
+
+.balance {
+	float: left; padding: 1.5rem 20px; position: relative;
+}
+
+.balance:before {
+	content: "\20"; position: absolute; display: block; left: 25px; top: 0; height: 1px; right: 25px; background: rgba(0, 0, 0, .2); -webkit-transform-origin: 50% 0; transform-origin: 50% 0;
+	-webkit-transform: scaleY(.5); transform: scaleY(.5);
+}
+
+.b-money {
+	line-height: 3rem; float: left;
+}
+
+.b-money span, .b-money var, .b-money em {
+	font-size: 2.0rem;
+}
+
+.btn-tx {
+	position: absolute; display: block; top: 50%; right: 20px; background: #F39801; color: #ffffff; border-radius: 5px; line-height: 3rem; padding: 0 2rem; transform: translateY(-50%);
+	-webkit-transform: translateY(-50%); font-size: 18px;
+}
+
+.state {
+	font-size: 1.6rem;
+}
+
+.money {
+	float: right; color: #f14730;
+}
+
+.time {
+	color: #999;
+}
+
+.number {
+	float: right; color: #999;
+}
+
+.green {
+	color: #00b600;
+}

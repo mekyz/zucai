@@ -1,0 +1,167 @@
+header {
+	padding: 0 1.5rem; background: #fff; position: relative;
+}
+
+header:before {
+	content: "\20"; position: absolute; display: block; left: 0; bottom: -1px; height: 1px; width: 100%; background: rgba(0, 0, 0, .15); -webkit-transform-origin: 50% 0; transform-origin: 50% 0;
+	-webkit-transform: scaleY(.5); transform: scaleY(.5);
+}
+
+.userinfodiv {
+	padding: 1.5rem 0;
+}
+
+.user-pic {
+	float: left; height: 7rem; width: 7rem; border-radius: 100%; margin-right: 1rem;
+}
+
+.user-pic img {
+	height: 100%; width: 100%; border-radius: 100%;
+}
+
+.user-information {
+	overflow: hidden;
+}
+
+.user-information dd {
+	font-size: 1.8rem;
+}
+
+.btn-refund {
+	height: 2rem; line-height: 2.2rem; position: absolute; right: 1.5rem; top: 2rem; padding-left: 1.6rem; background: url(../images/btn-refund.png) no-repeat left center/1.5rem 1.5rem; color: #45b6c7;
+}
+
+.elect:after {
+	right: 5px; position: absolute; top: 50%; margin-top: -4px; width: 8px; height: 8px; border-top: 1px solid #9d9d9d; border-left: 1px solid #9d9d9d; display: block; content: '\20';
+	transform: rotate(135deg); -webkit-transform: rotate(135deg);
+}
+
+.center-item:after {
+	right: 5px; position: absolute; top: 50%; width: 80px; display: block; transform: rotate(135deg); -webkit-transform: rotate(135deg);
+}
+
+.addequipment {
+	font-size: 1.6rem; padding-left: 2rem; background: url(../images/icon-add.png) no-repeat left center/1.5rem;
+}
+
+.settings {
+	font-size: 1.6rem; padding-left: 2rem; background: url(../images/icon-settings.png) no-repeat left center/1.5rem;
+}
+
+.settings-mp {
+	font-size: 1.6rem; padding-left: 2rem; background: url(../images/icon-settings-mp.png) no-repeat left center/1.5rem;
+}
+
+.versions {
+	float: right; margin-right: 2rem;
+}
+
+.Noorder {
+	margin-top: 2rem; text-align: center; z-index: 1;
+}
+
+.Noorder img {
+	display: inline-block;
+}
+
+.title {
+	padding: 15px 0;
+}
+
+.fl-ri {
+	float: right;
+}
+
+.number {
+	font-size: 1.6rem; float: left;
+}
+
+.icon-normal {
+	display: block; background: #45b6c7; color: #fff; border-radius: .8rem; font-size: 1rem; margin-left: .5rem; height: 1.6rem; line-height: 1.6rem; float: left; padding: 0 .5rem; margin-top: .2rem;
+}
+
+.icon-Mobile {
+	display: block; background: #f49105; color: #fff; border-radius: .8rem; font-size: 1rem; margin-left: .5rem; height: 1.6rem; line-height: 1.6rem; float: left; padding: 0 .5rem; margin-top: .2rem;
+}
+
+.btn-replenish {
+	border: solid 1px #45b6c7; display: inline-block; color: #45b6c7; width: 48%; height: 3rem; line-height: 3rem; border-radius: 3px; text-align: center;
+}
+
+.icon-state {
+	display: block; border: solid 1px #ccc; color: #999; border-radius: .8rem; font-size: 1rem; margin-left: .5rem; height: 1.6rem; line-height: 1.6rem; float: left; padding: 0 .5rem; margin-top: .7rem;
+}
+
+.scenebox {
+	position: relative; line-height: 30px; padding: 1.5rem 0;
+}
+
+.scenebox:before {
+	content: "\20"; position: absolute; display: block; left: 0; top: 0; height: 1px; width: 100%; background: rgba(0, 0, 0, .1); -webkit-transform-origin: 50% 0; transform-origin: 50% 0;
+	-webkit-transform: scaleY(.5); transform: scaleY(.5);
+}
+
+.namediv {
+	float: left; font-size: 1.6rem;
+}
+
+.btn-look {
+	border: solid 1px #45b6c7; color: #45b6c7; line-height: 28px; padding: 0 1rem; display: inline-block; border-radius: 3px;
+}
+
+.btn-pass {
+	border: solid 1px #00b600; color: #00b600; line-height: 28px; padding: 0 1rem; display: inline-block; border-radius: 3px;
+}
+
+.btn-details {
+	border: solid 1px #45b6c7; color: #45b6c7; line-height: 28px; padding: 0 1.5rem; display: inline-block; border-radius: 3px;
+}
+
+.btn-verifying {
+	border: solid 1px #666666; color: #666666; line-height: 28px; padding: 0 1rem; display: inline-block; border-radius: 3px;
+}
+
+.btn-failures {
+	border: solid 1px #f04242; color: #f04242; line-height: 28px; padding: 0 1rem; display: inline-block; border-radius: 3px;
+}
+
+.hairlines .btn-look, .hairlines .btn-pass, .hairlines .btn-details, .hairlines .btn-verifying, .hairlines .btn-failures {
+	border-width: .5px;
+}
+
+.win-bg {
+	display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 100;
+}
+
+.win {
+	position: fixed; min-width: 250px; width: 70%; top: 50%; left: 50%; background: #fff; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-radius: 5px;
+	text-align: center;
+}
+
+.wintit {
+	font-size: 1.6rem; font-weight: normal; border-bottom: solid 1px #dfdfdf; padding: 1rem;
+}
+
+.wintxt {
+	padding: 1rem;
+}
+
+.btn-div {
+	padding: 1rem;
+}
+
+.cdkey {
+	padding: 2rem 0; display: block; color: #f49105; font-size: 2rem;
+}
+
+.forecast {
+	margin: 1rem; padding: 1rem; position: relative; background: #fff; border: solid 1px #ddd; border-radius: 3px;
+}
+
+.forecast-txt {
+	font-size: 1.6rem; background: url(../images/icon-trumpet.png) no-repeat left center/1.4rem; padding-left: 2rem; line-height: 30px;
+}
+
+.btn-download {
+	position: absolute; top: 1rem; right: 1.5rem; line-height: 28px; height: 28px; padding: 0 1rem; display: block; border: solid 1px #f14730; color: #f14730; border-radius: 3px;
+}
