@@ -395,7 +395,7 @@ marquee a {
 										</a></li>
 										<li><a href="rechargerecord"> <img src="<%=betDir%>/Public/Home/h+/images/nav-bj.jpg" /> <span> 充值记录</span>
 										</a></li>
-										< <li><a href="tfreply"> <img src="<%=betDir%>/Public/Home/h+/images/nav-bj.jpg" /> <span> 会员转币</span>
+										<li><a href="tfreply"> <img src="<%=betDir%>/Public/Home/h+/images/nav-bj.jpg" /> <span> 会员转币</span>
 									    </a></li> 
 										<li><a href="tfrecord"> <img src="<%=betDir%>/Public/Home/h+/images/nav-bj.jpg" /> <span> 转币记录</span>
 										</a></li>
