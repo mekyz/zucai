@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public enum PayeeType
 {
-	PAY_ONLINE("PAY_ONLINE", "在线支付"), UNIONPAY("UNIONPAY", "银联转账"), ALIPAY("ALIPAY", "支付宝");
+	PAY_ONLINE("PAY_ONLINE", "在线支付"), UNIONPAY("UNIONPAY", "银联转账"), ALIPAY("ALIPAY", "支付宝"),WECHATPAY("WECHATPAY","微信");
 	private String type;
 	private String desc;
 

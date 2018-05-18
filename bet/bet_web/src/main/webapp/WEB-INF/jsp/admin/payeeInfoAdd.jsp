@@ -72,7 +72,7 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="bankName" class="control-label col-md-3 col-sm-3 col-xs-12">开户行：</label>
+							<label for="bankName" class="control-label col-md-3 col-sm-3 col-xs-12">开户行/第三方支付：</label>
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<form:select path="bankName" class="form-control">
 									<form:option value="工商银行">工商银行</form:option>
@@ -93,13 +93,15 @@
 									<form:option value="渣打银行">渣打银行</form:option>
 									<form:option value="花旗银行">花旗银行</form:option>
 									<form:option value="广发银行">广发银行</form:option>
+									<form:option value="支付宝">支付宝</form:option>
+									<form:option value="微信">微信</form:option>
 								</form:select>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="bankCardId" class="control-label col-md-3 col-sm-3 col-xs-12">银行卡号：</label>
+							<label for="bankCardId" class="control-label col-md-3 col-sm-3 col-xs-12">银行卡号/第三方账号：</label>
 							<div class="col-md-6 col-sm-6 col-xs-12">
-								<form:input path="bankCardId" class="form-control" placeholder="请输入银行卡号" />
+								<form:input path="bankCardId" class="form-control" placeholder="请输入银行卡号/第三方账号" />
 							</div>
 						</div>
 						<div class="form-group">
@@ -116,7 +118,7 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="picUrl" class="control-label col-md-3 col-sm-3 col-xs-12">银行LOGO：</label>
+							<label for="picUrl" class="control-label col-md-3 col-sm-3 col-xs-12">LOGO：</label>
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="div_photo no-border" style="width: 150px; height: 100%; margin: 0;">
 									<div class="photo no-border">

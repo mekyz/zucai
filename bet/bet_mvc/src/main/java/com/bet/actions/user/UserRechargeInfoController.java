@@ -164,6 +164,18 @@ public class UserRechargeInfoController extends BaseUserController
 		mv.addObject("payeeInfo", payeeInfo);
 		return mv;
 	}
+	@RequestMapping(value = "/reply_put5", method = RequestMethod.GET)
+	public ModelAndView reply_put5(HttpServletRequest request)
+	{
+		ModelAndView mv = new ModelAndView(getViewName("reply_put5"));
+		UserInfo sessionUserInfo = getUserSession(request);
+		mv.addObject("userInfo", sessionUserInfo);
+		mv.addObject("userRechargeInfo", new UserRechargeInfo());
+		// mv.addObject("rmbRate", configInfoService.getDoubleValue(BetConstValues.CONFIG_RMB_RATE));
+		PayeeInfo payeeInfo = payeeInfoService.getPayeeInfoByPayeeType(PayeeType.WECHATPAY.getType());
+		mv.addObject("payeeInfo", payeeInfo);
+		return mv;
+	}
 
 	@RequestMapping(value = "/userRechargeInfoEdit", method = RequestMethod.GET)
 	public ModelAndView userRechargeInfoEdit(HttpServletRequest request, @RequestParam(value = "rechargeId", required = true) String rechargeId)

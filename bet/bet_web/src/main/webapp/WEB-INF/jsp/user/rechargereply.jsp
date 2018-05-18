@@ -54,13 +54,13 @@
 											<img src="<%=betDir%>/Public/Home/h+/images/right.png" /> <span></span>
 										</div>
 									</li>
-									<li data-val="2">
+									<%-- <li data-val="2">
 										<h2 style="color: #757575">在线支付</h2> <img src="<%=betDir%>/Public/Home/h+/images/pay_img1.jpg" />
 										<p style="color: #757575">银联在线支付是中国银联与商业银行共同打造的银行卡网上交易转接清算平台，支持各类型银联卡支持开通网银的银联储蓄卡在线支付充值。</p>
 										<div class="pay-right">
 											<img src="<%=betDir%>/Public/Home/h+/images/right.png" /> <span></span>
 										</div>
-									</li>
+									</li> --%>
 									<li data-val="3">
 										<h2 style="color: #757575">支付宝入款</h2> <img src="<%=betDir%>/Public/Home/h+/images/pay_img3.jpg" />
 										<p style="color: #757575">支付宝（中国）网络技术有限公司是国内领先的第三方支付平台，致力于提供“简单、安全、快捷”的支付解决方案。</p>
@@ -75,6 +75,13 @@
 											<img src="<%=betDir%>/Public/Home/h+/images/right.png" /> <span></span>
 										</div>
 									</li>-->
+									<li data-val="5">
+										<h2 style="color: #757575">微信支付</h2> <img src="<%=betDir%>/Public/Home/h+/images/pay_img5.png" />
+										<p style="color: #757575">微信支付是国内领先的第三方支付平台，致力于提供“简单、安全、快捷”的支付解决方案。</p>
+										<div class="pay-right">
+											<img src="<%=betDir%>/Public/Home/h+/images/right.png" /> <span></span>
+										</div>
+									</li>
 								</ul>
 							</div>
 							<p class="pay-txt1">
@@ -93,10 +100,12 @@
 									}else if(val=='1'){
 										window.location.href="reply_put2";
 									}else if(val=='3'){
-										layer.msg('暂未开放，敬请期待！',{icon:7});
-										//window.location.href="reply_put3";
+										//layer.msg('暂未开放，敬请期待！',{icon:7});
+										window.location.href="reply_put3";
 									}else if(val=='4'){
 										layer.msg('暂未开放，敬请期待！',{icon:7});
+									}else if(val=='5'){
+										window.location.href="reply_put5";
 									}
 								}
 							</script>
