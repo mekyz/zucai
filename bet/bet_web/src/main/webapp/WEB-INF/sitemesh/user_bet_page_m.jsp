@@ -442,7 +442,7 @@ marquee a {
 										</a></li>
 									</ul></li>
 							</ul>
-						</nav>
+						</nav> 
 					</div>
 					<!-- End Sidebar Menu-->
 				</div>

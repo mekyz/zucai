@@ -401,7 +401,7 @@ marquee a {
 										</a></li>
 									</ul></li>
 								<li class="nav-parent"><a href="javascript:;" title="足球赛事"> <img src="<%=betDir%>/Public/Home/h+/images/nav-bj.jpg" /> <i class="fa fa-gift  " aria-hidden="true"></i> <span>足球赛事</span>
-								</a>
+								</a> 
 									<ul class="nav nav-children">
 										<li><a href="index"> <img src="<%=betDir%>/Public/Home/h+/images/nav-bj.jpg" /> <span> 赛事列表</span>
 										</a></li>
